@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+}
+
+.hero {
+	text-align: center;
+}
+
+.early-bird h3 {
+	color: red;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: self-start;
+    justify-content: space-around;
+}
+
+.early-bird, .price-list {
+    width: 300px;
+}
+
+.price-attendee {
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+    padding: 10px 0;
+    font-weight: 100;
+}
+
+input, select {
+  outline: 0;
+	border-width: 0 0 2px;
+  width: 300px;
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+
+input:focus {
+  border-bottom: 1px solid dodgerblue;
+}
+
+[type="date"] {
+  background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
+}
+
+[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+
+[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+.name {
+    width: 300px;
+    margin: 25px auto;
+}
+
+.info-ticket {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 100px 0 0;
+    align-items: baseline;
+    max-width: 850px;
+    margin: 0 auto;
+    
+}
+
+span {
+    float: right;
+    color: lightslategray;
+}
+
+#check {
+	width: auto;
+}
+
+#confirmed {
+  display: none;
+  font-size: 18px;
+  border-top: 1px solid lightgray;
+  padding-top: 20px;
+}
+
+#total {
+    text-align: right;
+    display: none;
+    font-size: 20px;
+}
+
+#buy {
+  border: none;
+  background-color: red;
+  height: 44px;
+  color: #fff;
+  display: none;
+  font-size: 22px;
+}
+
+#buy:hover {
+  cursor: pointer;
+}
+
+#message {
+    display: none;
+    color: green;
+}
+
+#errorMessage {
+    display: none;
+    color: red;
+}
+
+.invalid { 
+  border-color: #F77; 
+  background-color: #FEE; 
+}
+
+@media screen and (max-width: 768px) {
+	.hero {
+		text-align: left;
+    padding: 0 20px;
+    margin-top: 100px;
+  }
+  .info-ticket {
+    padding-top: 20px;
+  }
+}
